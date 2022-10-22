@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #004aad;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px; 
+}
+
+.list{
+  display: flex;
+  align-items: center;
+}
+.list li{
+  list-style: none;
+  padding-right: 15px;
+  color: #fff;
+  font-size: 14px;
+}
+.list li a{
+  text-decoration: none;
+  color: #fff;
+}
+.list li a:hover{
+  color: #fe6601;
+}
+.btn{
+  background: #fe6601;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+ /* color: #1d5191; */
+h1{
+  font-size: 150px;
+  color: #fff;
+  margin-left: 40px;
+  font-weight: bolder;
+  background-image: url('Images/graph-g649654a53_1920.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.header-text{
+  font-size: 20px;
+}
+/* .container2{
+  /* background-image: url('Images/graph-g649654a53_1920.jpg'); */
+  /* background-position: center;
+  opacity: 0.5;
+}  */
+p{
+  color: #fff;
+  margin: 40px;
+  line-height: 2rem;
+}

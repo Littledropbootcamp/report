@@ -7,21 +7,38 @@
   <title>Littledrop Report Website</title>
   <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
   <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
+  <link rel="stylesheet" href="style.css"/>
   
 </head>
 <body>
-  <div id="container">
+  <div class="container">
     <nav id="navbar">
       <img src="Images/ld-logo.png" alt="Title-icon"/>
-      <ul>
-        <li>Bi-annual Report</li>
-        <li>Annual Report</li>
-      </ul>
-      <button>Download Reports</button>
+      <ul class="list">
+        <li><a href="./2021.html">Bi-annual Report</a></li>
+        <li><a>Annual Report</a></li>
+        <button class="btn">Download Reports</button>
+      </ul>   
     </nav>
   </div>
+  <div class="container2">
+    <h1>2022 <span class="header-text">Has been an amazing yesr for us at Littledrop Education Bootcamp</span></h1>
+</div>
+  <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from https://www.freecodecamp.org/ and the financial aid programme of Coursera.
+    Aim:
+    · To assist unemployed youth, empower women to develop employability skills and build a solid foundation in a chosen career path in IT.
+    Objectives:
+    · To reduce the jobless rate by giving opportunities to highly dedicated individuals to gain digital skills that they can leverage for employment opportunities.
+    · To assist individuals who cannot afford expensive Bootcamps by providing an enabling environment for them to develop their employability skills to achieve their IT dreams.
+    </p>
 
-  <div id="container" style="width: 100%; height: 100%"></div>
+    <h2>Highlights of activities in 2022</h2>
+    <div>
+      <img src="Images/graph-g649654a53_1920.jpg" alt="graph"/>
+      <img src="Images/graph-g649654a53_1920.jpg" alt="graph"/>
+      <img src="Images/graph-g649654a53_1920.jpg" alt="graph"/>
+    </div>
+  <div id="container" style="width: 50%; height: 100%"></div>
   <script>
     anychart.onDocumentReady(function() {
 
@@ -39,7 +56,7 @@
       ]};
 
       // create the chart
-      chart = anychart.bar();
+      chart = anychart.column();
       
       // add the data
       chart.data(data);
