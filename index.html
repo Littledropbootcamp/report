@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Littledrop Report Website</title>
   <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
   <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
   <link rel="stylesheet" href="style.css"/>
+  
   
 </head>
 <body>
@@ -15,22 +17,60 @@
     <nav id="navbar">
       <img src="Images/ld-logo.png" alt="Title-icon"/>
       <ul class="list">
-        <li><a href="./2021.html">Bi-annual Report</a></li>
-        <li><a>Annual Report</a></li>
-        <button class="btn">Download Reports</button>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bi-annual Report
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="./2021.html">2021</a></li>
+            <li><a class="dropdown-item" href="./2022.html">2022</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="./2021.html">Bi-annual Report</a></li> -->
+        <!-- <li><a>Annual Report</a></li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Annual Report
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="./2021.html">2021</a></li>
+            <li><a class="dropdown-item" href="./2022.html">2022</a></li>
+          </ul>
+        </li>
+        <button type="button" class="btn btn-primary btn-sm">Download Reports</button>
       </ul>   
     </nav>
   </div>
   <div class="container2">
-    <h1>2022 <span class="header-text">Has been an amazing yesr for us at Littledrop Education Bootcamp</span></h1>
+    <div>
+      <h1>2022</h1>
+      <p class="header-text">2022 has been an amazing year for us at Little drop Education Bootcamp, from onboarding and reaching locations outside Nigeria, to mentees completing their courses, to mentees getting employed, it's really an amazing journey for us.</p>
+  </div>
+
+    <img class="home-img" src="Images/graph.jpg" alt="home-img"/>
 </div>
-  <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from https://www.freecodecamp.org/ and the financial aid programme of Coursera.
-    Aim:
-    · To assist unemployed youth, empower women to develop employability skills and build a solid foundation in a chosen career path in IT.
-    Objectives:
-    · To reduce the jobless rate by giving opportunities to highly dedicated individuals to gain digital skills that they can leverage for employment opportunities.
-    · To assist individuals who cannot afford expensive Bootcamps by providing an enabling environment for them to develop their employability skills to achieve their IT dreams.
+
+<!-- <figure class="text-center">
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure> -->
+  <blockquote class="blockqoute">
+    <h2 class="block-text">What We Stand For<hr></h2>
+      <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from https://www.freecodecamp.org/ and the financial aid programme of Coursera.
+      <p><strong>Our Aim:</strong>
+      · To assist unemployed youth, empower women to develop employability skills and build a solid foundation in a chosen career path in IT.
     </p>
+    <p> 
+      <strong>Our Objectives:</strong>
+        <ul class="block-list">
+          <li>To reduce the jobless rate by giving opportunities to highly dedicated individuals to gain digital skills that they can leverage for employment opportunities.</li>
+          <li>To assist individuals who cannot afford expensive Bootcamps by providing an enabling environment for them to develop their employability skills to achieve their IT dreams.</li>
+        </ul>
+    </p>
+    </p>
+  </blockquote>
 
     <h2>Highlights of activities in 2022</h2>
     <div>
@@ -69,5 +109,6 @@
       chart.draw();
     });
   </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
