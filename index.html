@@ -57,7 +57,7 @@
   </figcaption>
 </figure> -->
   <blockquote class="blockqoute">
-    <h2 class="block-text">What We Stand For<hr></h2>
+    <h2 class="block-text">What We Stand For<img class="arrow" src="Images/arrow.jpg" /><hr></h2>
       <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from https://www.freecodecamp.org/ and the financial aid programme of Coursera.
       <p><strong>Our Aim:</strong>
       · To assist unemployed youth, empower women to develop employability skills and build a solid foundation in a chosen career path in IT.
@@ -72,27 +72,26 @@
     </p>
   </blockquote>
 
-    <h2>Highlights of activities in 2022</h2>
+  <section>
+    <h2 class="highlight-header">Highlights of activities in 2022</h2>
     <div>
-      <img src="Images/graph-g649654a53_1920.jpg" alt="graph"/>
-      <img src="Images/graph-g649654a53_1920.jpg" alt="graph"/>
-      <img src="Images/graph-g649654a53_1920.jpg" alt="graph"/>
+      <!-- <p>Introduction of Non-coding courses<img src="Images/arrow.jpg" alt="graph"/></p>
+      <p>We onboarded mentees 4 times this year<img src="Images/arrow.jpg" alt="graph"/></p>
+      <p>Our first virtual induction was held this year<img src="Images/arrow.jpg" alt="graph"/></p> -->
     </div>
+  </section>
   <div id="container" style="width: 50%; height: 100%"></div>
   <script>
     anychart.onDocumentReady(function() {
 
       // set the data
       var data = {
-          header: ["Name", "Death toll"],
+          header: ["Name", "Month"],
           rows: [
-            ["San-Francisco (1906)", 1500],
-            ["Messina (1908)", 87000],
-            ["Ashgabat (1948)", 175000],
-            ["Chile (1960)", 10000],
-            ["Tian Shan (1976)", 242000],
-            ["Armenia (1988)", 25000],
-            ["Iran (1990)", 50000]
+            ["March", 150],
+            ["May", 87],
+            ["July", 175],
+            ["October", 204]
       ]};
 
       // create the chart
@@ -102,12 +101,13 @@
       chart.data(data);
 
       // set the chart title
-      chart.title("The deadliest earthquakes in the XXth century");
+      chart.title("Mentees we onboarded for the year 2022");
 
       // draw
       chart.container("container");
       chart.draw();
     });
+
   </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

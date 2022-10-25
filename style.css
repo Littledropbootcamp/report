@@ -85,15 +85,20 @@ h1{
   /* background: #189AB4; */
   background: #fff;
   margin: 150px 0px 50px 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color:#1d5191;
   line-height: 2rem;
+}
+.arrow{
+  height: 30px;
+  /* outline-color:#fe6601; */
 }
 .blockqoute p{
   margin-left: 60px;
   margin-right: 60px;
 }
 .block-text{
-  padding-top: 50px;
   margin-left: 60px;
 }
 .block-list{
