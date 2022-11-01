@@ -45,7 +45,8 @@ body{
   padding: 8px;
   border-radius: 18px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 12px;
 }
 .dropdown-menu{
   background-color: #fe6601;
@@ -106,9 +107,12 @@ h1{
   margin-right: 100px;
 }
 /* .container2{
-  /* background-image: url('Images/graph-g649654a53_1920.jpg'); */
-  /* background-position: center;
-  opacity: 0.5;
+  background-image: url('Images/BG.png');
+  background-position: center;
+   background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0px;
 }  */
 
   /* color: #1d5191; */

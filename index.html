@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <nav id="navbar">
-      <img src="Images/ld-logo.png" alt="Title-icon"/>
+      <img src="Images/ld-logo.svg" alt="Title-icon"/>
       <ul class="list">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bi-annual Report
@@ -39,6 +39,7 @@
       </ul>   
     </nav>
   </div>
+  
   <div class="container2">
     <div>
       <h1>2022</h1>
@@ -74,41 +75,16 @@
 
   <section>
     <h2 class="highlight-header">Highlights of activities in 2022</h2>
+    <div id="container" style="width: 50%; height: 100%">Growth in the Number of mentees we onboard</div>
     <div>
-      <!-- <p>Introduction of Non-coding courses<img src="Images/arrow.jpg" alt="graph"/></p>
+      <p>Introduction of Non-coding courses<img src="Images/arrow.jpg" alt="graph"/></p>
       <p>We onboarded mentees 4 times this year<img src="Images/arrow.jpg" alt="graph"/></p>
-      <p>Our first virtual induction was held this year<img src="Images/arrow.jpg" alt="graph"/></p> -->
+      <p>Our first virtual induction was held this year<img src="Images/arrow.jpg" alt="graph"/></p>
     </div>
   </section>
-  <div id="container" style="width: 50%; height: 100%"></div>
-  <script>
-    anychart.onDocumentReady(function() {
-
-      // set the data
-      var data = {
-          header: ["Name", "Month"],
-          rows: [
-            ["March", 150],
-            ["May", 87],
-            ["July", 175],
-            ["October", 204]
-      ]};
-
-      // create the chart
-      chart = anychart.column();
-      
-      // add the data
-      chart.data(data);
-
-      // set the chart title
-      chart.title("Mentees we onboarded for the year 2022");
-
-      // draw
-      chart.container("container");
-      chart.draw();
-    });
-
-  </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <div id="container" style="width: 50%; height: 100%">Growth in the Number of mentees we onboard</div>
 </body>
+  <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
