@@ -4,6 +4,7 @@ anychart.onDocumentReady(function() {
   var data = {
       header: ["Name", "Month"],
       rows: [
+        ["January",100],
         ["March", 150],
         ["May", 87],
         ["July", 175],
@@ -23,6 +24,22 @@ anychart.onDocumentReady(function() {
   chart.container("container");
   chart.draw();
 });
+
+//Donation tab===========================================================================
+function showDiv(){
+  // on click the donation details will be displayed
+  document.getElementById("show-div").style.display = "block";
+  
+}
+showDiv();
+
+// hide donate tab------------------------------------------------
+function hideDiv(){
+  document.getElementById("show-div").style.display ="none";
+    
+  }
+  
+  hideDiv();
 // var data = {
 //   header: ["Name", "Death toll"],
 //   rows: [
