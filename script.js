@@ -2,7 +2,7 @@ anychart.onDocumentReady(function() {
 
   // set the data
   var data = [
-      {x: "Coding", value: 316, fill: (red)},
+      {x: "Coding", value: 316},
       {x: "Non-coding", value: 198}
 
   ];
