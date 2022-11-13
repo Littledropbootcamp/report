@@ -260,9 +260,6 @@ h1{
   font-size: 15px;
  } 
 
-.introduction{
-  font-size: 24px;
-}
  /* .container2{
   background-image: url('Images/BG.png');
   background-position: center;
@@ -286,3 +283,38 @@ h1{
   overflow: hidden;
   background-color: #004aad;
 } */ 
+
+/*-------------------------------2022------------------------------------------*/
+main{
+  position: relative;
+  margin: 50px;
+
+}
+.introduction{
+  margin-left:auto;
+  font-size: 40px;
+  color:unset;
+}
+.bi-annual{
+  font-size: 24px;
+}
+h2{
+  margin-top: 20px;
+  font-weight: 900;
+}
+.intro-text{
+  line-height: 2.5em;
+  font-size:18px;
+  margin-top: 20px;
+}
+#resident, #container, #total{
+  padding: 100px;
+  width: 100%;
+  height: 600px;
+}
+
+@media screen and (max-width: 600px){
+  body{
+    max-width: 600px;
+  }
+}
