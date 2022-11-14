@@ -21,6 +21,7 @@ body{
   max-width: 100%;
   background-color: #004aad;
   position: fixed;
+  z-index: 1;
 }
 #navbar{
   display: flex;
