@@ -56,9 +56,9 @@ anychart.onDocumentReady(function() {
         ["Osun",	53],
         ["Kwara",	22],
         ["FCT",	8],
-        ["Malaysia",	1],
+        ["Malaysia", 1],
         ["KSA",	1],
-        ["Rivers",	5],
+        ["Rivers", 5],
         ["Ghana",	1],
         ["Oyo",	31],
         ["Bauchi",	1],
@@ -87,7 +87,7 @@ anychart.onDocumentReady(function() {
   chart.data(data);
 
   // set the chart title
-  chart.title("Coding Mentees residential area");
+  chart.title("Coding Mentees Residential Area");
 
   // draw
   chart.container("resident");
@@ -101,11 +101,29 @@ anychart.onDocumentReady(function() {
   var data = {
       header: ["Name", "Month"],
       rows: [
-        ["January",100, "#5cd65c"],
-        ["March", 150],
-        ["May", 87],
-        ["July", 175],
-        ["October", 204]
+        ["Lagos",	53],
+        ["Ogun",	16],
+        ["Osun",	47],
+        ["Kwara",	12],
+        ["FCT",	4],
+        ["Warrington",	1],
+        ["Borno",	2],
+        ["Rivers",	5],
+        ["Akwa Ibom",	3],
+        ["Oyo",	27],
+        ["Benue",	1],
+        ["Kaduna",	7],
+        ["Kano",	2],
+        ["Katsina",	2],
+        ["Kogi",	3],
+        ["Imo",	1],
+        ["Edo",	1],
+        ["Zamfara",	1],
+        ["Ekiti",	1],
+        ["Niger",	2],
+        ["Sokoto",	1],
+        ["Delta",	2],
+        ["Ondo",	8]
   ]};
 
   // create the chart
@@ -115,10 +133,10 @@ anychart.onDocumentReady(function() {
   chart.data(data);
 
   // set the chart title
-  chart.title("Mentees");
+  chart.title("Non-Coding Mentees Residential Area");
 
   // draw
-  chart.container("container");
+  chart.container("resident-noncoding");
   chart.draw();
 });
 
@@ -126,8 +144,10 @@ anychart.onDocumentReady(function() {
 
   // set the data
   var data = [
-      {x: "Male", value: 307},
-      {x: "Female", value: 140}
+      {x: "Male coding", value: 307},
+      {x: "Female Coding", value: 140},
+      {x: "Male Non-coding", value: 307},
+      {x: "Female Non-coding", value: 140}
 
   ];
   //,exploded: true
@@ -135,7 +155,7 @@ anychart.onDocumentReady(function() {
   var chart = anychart.pie();
   
   // set the chart title
-  chart.title("Gender count");
+  chart.title("Gender count of mentees from both pathway(Coding and Noncoding)");
   
   // sort elements
   chart.sort("desc");
@@ -144,13 +164,42 @@ anychart.onDocumentReady(function() {
   // set legend position
   chart.legend().position("right");
   // set items layout
-  chart.legend().itemsLayout("vertical");
+  chart.legend().itemsLayout("horizontal");
   
   // display the chart in the container
   chart.container('gender');
   chart.draw();
   
   });
+
+  anychart.onDocumentReady(function() {
+
+    // set the data
+    var data = {
+        header: ["Name", "Month"],
+        rows: [
+          ["Employed",	53],
+          ["Employed",	16],
+          ["Student",	53],
+          ["Student",	16],
+          ["Unemployed",	47],
+          ["Unemployed",	12]
+    ]};
+  
+    // create the chart
+    chart = anychart.column();
+    
+    // add the data
+    chart.data(data);
+  
+    // set the chart title
+    chart.title("Employement status of Mentees on both pathway");
+  
+    // draw
+    chart.container("container");
+    chart.draw();
+  });
+  
 
 //Donation tab===========================================================================
 function showDiv(){
