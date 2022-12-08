@@ -25,6 +25,7 @@ body{
   z-index: 1;
 }
 #navbar{
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 40px; 
@@ -65,38 +66,44 @@ body{
 }
 /*-----------------------------------------------------End of Navbar------------------------------------------------------------------------*/
 .container2{
-  height: 80vh;
+  height:100vh;
   display: flex;
   justify-content: space-between;
   /* margin: 40px; */
-  background-image: url('Images/bg1.png');
+  background-image: url('Images/background-img.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
 }
 
 h1{
-  margin-top:150px;
+  margin-top:250px;
   font-size: 200px;
-  color: #fff;
-  margin-left: 40px;
+  color: #004aad;
+  margin-left: 50px;
   font-weight: bolder;
   opacity: 1;
 }
 .header-text{
-  color: #fff;
-  font-size: 17px;
+  color: #004aad;
+  font-size: 18px;
   line-height: 2rem;
   margin-right: 40px;
-  margin-left: 40px;
+  margin-left: 50px;
+  font-weight: 500;
+}
+.little{
+  color:#fe6601;
 }
 .home-img{
-  margin-top: 150px;
-  width: 50%;
-  height: 50%;
-  border-radius: 70%;
-  margin-right: 40px;
+  margin-top: 250px;
+  width: 65%;
+  height: 60%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 180px;
 }
 
 .blockqoute{
