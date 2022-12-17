@@ -1,3 +1,25 @@
+let counts = setInterval(updated);
+let upto =0;
+function updated(){
+    var count= document.getElementById("counter");
+    count.innerHTML=++upto;
+    if(upto===956)
+    {
+        clearInterval(counts);
+    }
+}
+
+function hide(){
+  document.getElementById("menuList").style.display = "none";
+  //alert("leave now");
+  }
+  hide();
+
+function myFunction(){
+document.getElementById("menuList").style.display = "block"
+}
+
+
 anychart.onDocumentReady(function() {
 
   // set the data

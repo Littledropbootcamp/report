@@ -18,8 +18,13 @@
 <body>
   <div class="container">
     <nav id="navbar">
-      <img src="Images/ld-logo.svg" alt="Title-icon"/>
-      <ul class="list">
+      <img class="logo" src="Images/ld-logo.svg" alt="Title-icon"/>
+      <div>
+        <p class="menu">Menu<img onclick="myFunction()" class="toggle" src="Images/toggle-bar.png"/></p>
+      </div>
+      <ul id="menuList" class="list">
+        <p class="menu-close">close<img onclick="hide()" class="close-bar" src="Images/close.png"/></p>
+     
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bi-annual Report
           </a>
@@ -38,31 +43,28 @@
             <li><a class="dropdown-item" href="./2022.html">2022</a></li>
           </ul>
         </li>
-        <button type="button" class="btn btn-primary btn-sm">Download Reports</button>
+        <button type="button" class="btn btn-primary btn-sm">Download full Report</button>
       </ul>   
     </nav>
   </div>
-  
+ 
   <div class="container2">
-    <div>
-      <h1>2022</h1>
-      <p class="header-text">2022 has been an amazing year for us at Little drop Education Bootcamp, from onboarding and reaching locations outside Nigeria, to mentees completing their courses, to mentees getting employed, it has been an amazing journey for us at <span class="little">Little Drop Bootcamp</span>.</p>
+    <div class="background">
+      <h1 class="header">2022</h1>
+      <p class="header-text">2022 has been an amazing year for us at Little drop Education 
+        Bootcamp, from onboarding and reaching locations outside Nigeria, to mentees completing their courses, to mentees 
+        getting employed,  We look forward to another year of growth at
+         <span class="little">Little Drop Bootcamp</span>.</p>
+    </div>
   </div>
 
-    <img class="home-img" src="Images/design.jpg" alt="home-img"/>
-</div>
 
-<!-- <figure class="text-center">
-  <blockquote class="blockquote">
-    <p>A well-known quote, contained in a blockquote element.</p>
-  </blockquote>
-  <figcaption class="blockquote-footer">
-    Someone famous in <cite title="Source Title">Source Title</cite>
-  </figcaption>
-</figure> -->
-  <blockquote class="blockqoute">
+<main>
+  <div class="blockqoute">
+    <img class="blockquote-img" src="Images/productivity.jpg" alt="home-img"/>
+    <div>
     <h2 class="block-text">What We Stand For<img class="arrow" src="Images/arrow.jpg" /><hr></h2>
-      <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from https://www.freecodecamp.org/ and the financial aid programme of Coursera.
+      <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from FreeCodeCamp and the financial aid programme of Coursera.
       <p><strong>Our Aim:</strong>
       · To assist unemployed youth, empower women to develop employability skills and build a solid foundation in a chosen career path in IT.
     </p>
@@ -74,31 +76,59 @@
         </ul>
     </p>
     </p>
-  </blockquote>
+  </div>
+  </div>
 
   <section class="highlights">
     <h2 class="highlight-header">Highlights of activities in 2022</h2>
     <div class="highlight-section">
-      <div>
-      <img class="hg-images" src="Images/growth-image.png" alt=""/>
-      <p>Growth in the Number of mentees we onboarded for this year compared to the previous year(2021)</p>
+      <div class="hg-activities">
+        <div class="hg-intro">
+          <h3>Introduction of Non-coding courses</h3>
+          <p>The Little Drop Management Team came up with Non-coding courses. lorem ipsum Praesent at tristique felis. Vivamus vulputate ligula augue, et pretium velit placerat vel. In hac habitasse platea dictumst. Vestibulum sed venenatis mi. Duis posuere elementum est eget scelerisque. Praesent ferm</p>
+        </div>
+          <img class="hg-image1" src="Images/onboard.png" alt="graph"/>
+      </div>
+      <div class="hg-activities">
+        <div class="hg-intro">    
+          <h3>Growth in the Number of Our Mentees</h3>
+          <p>A total of xyz registered for our Coding and Non-Coding program  
+          compared to ttt that registered in 2021. It has been a tremendous growth.</p>
+        </div>
+        <div class="count">
+          <div id="counter">
+          </div>
+          <p class="increase">compared with xxx mentees we had in 2021</p>
+          <p class="increase">x% increase</p>
+        </div>
+      </div>
+
+      <div class="hg-activities">
+        <img class="hg-image2" src="Images/reach.png" alt="graph"/>
+        <div class="hg-intro1">
+          <h3>Our Reach Expanded</h3>
+          <p>We now have mentees registering from outside Nigeria, from countries like UK, Njadema, KSA, Malaysia, Kenya to name a few. This is a great accomplishment for us at Little Drop Education Bootcamp.</p>
+        </div>
+      </div>
+      </div>  
+    <div class="hg-activities">
+      <div class="hg-intro">
+        <h3>Our Team Expanded</h3>
+        <p>Inorder to give the best, we expanded our team by employing 3 interns  through an interview. They were able to proceed from the intern role to program co-ordinators and junior developers They have worked excellently and tirelessly to keep the Bootcamp moving forward. Check out some of their activities on our blog <a href="https: blog/ldbootcamp.com.ng"> here.</a> </p>
+      </div>
+      <img class="hg-images" src="Images/Team.png" alt="graph"/>
     </div>
-    <div>
-      <img class="hg-images" src="Images/non-coding.png" alt="graph"/>
-      <p>Introduction of Non-coding courses</p>
     </div>
-    <div>
-      <img class="hg-images" src="Images/onboarding.png" alt="graph"/>
-      <p>We onboarded mentees 5 times this year</p>
-    </div>
-    <div>
-      <img class="hg-images" src="Images/virtual.png" alt="graph"/>
-      <p>Our first virtual induction was held this year</p>
+    <div class="hg-activities">
+      <img class="hg-image2" src="Images/Wavy_Bus-20_Single-10.jpg" alt="graph"/>
+      <div class="hg-intro1">
+        <h3>Our Mentees got Employment offer</h3>
+        <p>Praesent at tristique felis. Vivamus vulputate ligula augue, et pretium velit placerat vel. In hac habitasse platea dictumst. Vestibulum sed venenatis mi. Duis posuere elementum est eget scelerisque. Praesent fermentum nisi a rutrum ultrices. Quisque turpis felis.</p>
     </div>
     </div>
     <a href="2022.html" class="btn-link">See full Report here ></a>
   </section>
-  
+</main>
   <!-------------------------------------Footer---------------------------------------------------------------------------->
 <footer id="footer">
   <div class="footer">
