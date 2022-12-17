@@ -30,7 +30,7 @@ body{
   z-index: 1;
 }
 #navbar{
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 40px; 
@@ -388,25 +388,55 @@ h2{
   height: 600px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
   body{
     max-width: 600px;
   }
+  .container{
+    min-width:100%;
+    z-index: 9;
+    }
   #navbar{
     padding-top: 15px;
     padding-bottom: 10px;
     padding-left: 0px;
     height: 50px;
+    min-width: 100%;
+    z-index: 9;
+    justify-content: flex-start;
+    align-items: center;
   }
   .logo{
-    height: 30px;
+    margin-left: 10px;
+    height: 40px;
     width: 120px;
   }
+  .menu{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 70px;
+  }
+.menu-close{
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+  .list{
+    width:100%;
+    height: 80vh;
+    top: 10px;
+  }
+  .list li{
+    font-size: 14px;
+  }
+  .btn{
+    height: 30px;
+    width: 30%;
+    font-size: 12px;
+  }
   .container2{
-   background-size: 100%;
-   height: 60vh;
+   background-size: 500px;
    top: 50;
-   margin-bottom: -150px;
+   margin-bottom: -350px;
   }
   .background{
     margin-top: 70px;
@@ -414,14 +444,14 @@ h2{
   }
   .header{
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 20px;
     margin-bottom: 0px;
     margin-right: 0px;
   }
   .header-text{
     font-weight: 700;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1rem;
     margin-right: 20%;
     margin-left: 20px;
@@ -459,12 +489,29 @@ h2{
   .block-list{
     margin: 0px;
   }
-  /* h3{
-    font-weight: 600;
-  } */
+
+  .highlight-header{
+    margin-top: 50px;
+  }
+  h2, h3{
+    font-size: 20px;
+  }
   .hg-activities{
     flex-direction: column;
     margin-bottom: 40px;
+  }
+  .hg-intro{
+    padding: 0px;
+  }
+  .hg-image1{
+    width: 280px;
+  }
+  .graph{
+    width: 280px;
+  }
+  .hg-images{
+    width: 280px;
+    height: 200px;
   }
   
 }
