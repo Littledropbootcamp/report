@@ -12,7 +12,7 @@ function updated(){
 function myMenu(){
   document.getElementById("menuList").style.display = "block"
   }
-  myFunction();
+  myMenu();
 
 function hide(){
   document.getElementById("menuList").style.display = "none";

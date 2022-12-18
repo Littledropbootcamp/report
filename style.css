@@ -125,7 +125,7 @@ body{
   font-weight: bolder;
 }
 .header-text{
-  color: #004aad;
+  color: #1d5191;
   font-size: 18px;
   line-height: 2rem;
   margin-right: 50%;
@@ -136,6 +136,11 @@ body{
   color:#fe6601;
 }
 /*-----------------------------------------------MAIN-----------------------------------------------*/
+main{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
 .blockqoute{
   display: flex;
   /* background: #189AB4; */
@@ -182,9 +187,12 @@ h3{
 }
 .hg-intro{
   padding-right: 20%;
+  margin-left: 80px;
+  
 }
 .hg-intro1{
   padding-left: 20%;
+  margin-right: 80px;
 }
 .count{
   background-color: #fe6601;
@@ -202,21 +210,27 @@ h3{
 .hg-image1{
   margin-top: 0px;
   top: 0;
+  margin-right: 80px;
 }
 .hg-images{
   height: 300px;
   width:400px;
+  margin-right: 80px;
 }
 .hg-image2{
   width: 300px;
+  margin-left: 80px;
 }
 /* .highlight-section div{
   width: 50%;
   padding: 20px;
 } */
 .btn-link{
-  color:#fff;
+  color: #fe6601;
   text-align: right;
+  justify-self: flex-end;
+  font-weight: 700;
+  margin: auto;
 }
 
 
@@ -388,42 +402,53 @@ h2{
   height: 600px;
 }
 
-/* @media screen and (max-width: 767px){
+@media screen and (max-width: 767px){
   body{
     max-width: 767px;
   }
-  .container{
+  /* .container{
     min-width:100%;
     z-index: 9;
-    }
+    } */
   #navbar{
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
-    height: 50px;
+    height: 60px;
     min-width: 100%;
     z-index: 9;
     justify-content: flex-start;
     align-items: center;
   }
+  .navbar> .container-fluid{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+#navbar{
+    padding-right: 0px;
+  }
   .logo{
-    margin-left: 10px;
     height: 40px;
     width: 120px;
   }
   .menu{
-    margin-top: 15px;
     font-size: 20px;
-    margin-left: 70px;
+    margin-bottom: 0px;
+    justify-self: right;
+  }
+  .toggle{
+    margin-left: 0px;
   }
 .menu-close{
-  margin-top: 20px;
   justify-content: flex-start;
+  margin-top: 30px;
 }
 .close-bar{
   height: 30px;
   /* margin-top: 5px; */
-  /* padding: 5px;
+   padding: 5px;
 }
   .list{
     width:100%;
@@ -433,39 +458,53 @@ h2{
   .list li{
     font-size: 14px;
   }
-  .btn{
+  .btn-sm{
     height: 30px;
-    width: 30%;
+    width: 60%;
     font-size: 12px;
+    padding: 5px 6px 5px 6px;
   }
   .container2{
    background-size: 500px;
-   top: 50;
+   margin-top: 50px;
    margin-bottom: -350px;
   }
   .background{
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 0px;
   }
   .header{
-    margin-top: 30px;
+    /* margin-top: 30px;
     font-size: 45px;
     margin-left: 20px;
     margin-bottom: 0px;
-    margin-right: 0px;
+    margin-right: 0px; */
+    display: none;
+  }
+  .bold{
+    font-size: 40px;
+    font-weight: 700;
   }
   .header-text{
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 1rem;
-    margin-right: 20%;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.2rem;
+    margin-right: 20px;
     margin-left: 20px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+  }
+  .little{
+    font-weight: bold;
   }
   main{
     top: 0;
     right: 0;
     z-index: 0;
     position: relative;
+    min-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .blockqoute{
     flex-direction: column-reverse;
@@ -517,6 +556,66 @@ h2{
   .hg-images{
     width: 280px;
     height: 200px;
+  }*/
+  
+
+  #footer{
+    margin-top: 50px;
+    height: 100%;
+  }
+  /* .footer img{
+    height: 
+  } */
+  .footer-text{
+    margin-left: 0px;
+  }
+  .footer{
+    flex-direction: column;
   }
   
-} */ 
+  .show-details{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    padding: 0px;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background: transparent;
+    background: #0A3465;
+    z-index: 9;
+    /* right: 0; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+   }
+   .donation-tab{
+    display: inline;
+  }
+  /* .f-logo{
+     margin-left: -0px;
+     align-self: start;
+  } */
+  .footer-logo{
+    height: 50px; 
+    padding-left: 0px;
+  }
+  .social-media-icons img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+} 
+@media (min-width: 501px) and (max-width: 767px){
+  .container2{
+    background-size: 100%;
+  }
+  .header-text{
+    padding-top: 50px;
+  }
+}
+@media (min-width: 655px) and (max-width: 767px){
+  .header-text{
+    padding-top: 100px;
+  }
+}
