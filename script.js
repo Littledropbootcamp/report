@@ -8,7 +8,8 @@ function updated(){
         clearInterval(counts);
     }
 }
-function myFunction(){
+
+function myMenu(){
   document.getElementById("menuList").style.display = "block"
   }
   myFunction();
