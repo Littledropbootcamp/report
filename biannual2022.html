@@ -9,18 +9,29 @@
   <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
   <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
   <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+</script>
 </head>
 <body>
   <div class="container">
-    <nav id="navbar">
-      <a href="./index.html"><img src="Images/ld-logo.svg" alt="Title-icon"/></a>
-      <ul class="list">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+      <a href="index.html"><img class="logo" src="Images/ld-logo.svg" alt="Title-icon"/></a>
+      <div>
+        <p class="menu">Menu<img onclick="myMenu()" class="toggle" src="Images/toggle-bar.png"/></p>
+      <ul id="menuList" class="list">
+        <p class="menu-close">close<img onclick="hide()" class="close-bar" src="Images/close.png"/></p>
+     
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bi-annual Report
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="./2021.html">2021</a></li>
-            <li><a class="dropdown-item" href="./2022.html">2022</a></li>
+            <li><a class="dropdown-item" href="/2021.html">2021</a></li>
+            <li><a class="dropdown-item" href="/biannual2022.html">2022</a></li>
           </ul>
         </li>
         <!-- <li><a href="./2021.html">Bi-annual Report</a></li> -->
@@ -29,18 +40,21 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Annual Report
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="./2021.html">2021</a></li>
-            <li><a class="dropdown-item" href="./2022.html">2022</a></li>
+            <li><a class="dropdown-item" href="/Annual2021.html">2021</a></li>
+            <li><a class="dropdown-item" href="Annual2022.html">2022</a></li>
           </ul>
         </li>
-        <button type="button" class="btn btn-primary btn-sm">Download Reports</button>
-      </ul>   
-    </nav>
-  </div>
-  <main>  
-    <h1 class="introduction">Little Drop (LD) Coding e-Bootcamp </h1>
-      <p class="bi-annual">Biannual Report 2022</p> 
-    <h2>EXPLOITS</h2>
+        <button type="button" class="btn btn-primary btn-sm">Download full Report</button>
+        </ul> 
+      </div>  
+    </div>
+  </nav>
+</div> 
+
+<!-------------------------------------------End of Navbar------------------------------------------------------------------------->
+  <main class="bi-annual2">  
+    <h1 class="introduction">Biannual Report 2022 </h1>
+      <p class="bi-annual">EXPLOITS</p> 
     <p class="intro-text">Undeterred by the unusual increase in the population of interns, we have successfully recorded four cohorts of mentees, with the fifth currently being attended to for July. These four would be recorded in two between the coding and non-coding pathways. It was, however, not mistaken that the rise in intakes was partly due, especially from March when the non-coding pathways officially commenced with the opening of its registration link to the public. A total of 316  and 198 mentees were recorded, respectively, for the two pathways; Coding and noncoding.
     Ultimately, we extended our tentacles to more youths in Nigeria and the diaspora. 
       </p>
@@ -63,6 +77,70 @@
         Also, we created a talent acquisition department for the bootcamp, which is in charge of getting mentees employment opportunities and introducing the mentees to the industries in several sectors of the economy.
         In a recent survey, we discovered that some of our graduated mentees and those still in the Bootcamp work in the software industry. Three of such gained employment through the bootcamp in February of this year. 
         </p>
+
+        <div id="chart_div"></div>
+
+        Below are the roles being taken by our mentees:
+Operation lead
+Business Manager
+Business owner
+Computer Tutor
+Content creator
+Data analyst
+Database administrator for pharmacy outlet
+Digital marketer
+Office assistant 
+Operations Lead
+Project Management
+Project manager
+Sales Representative 
+Social Media manager
+Social Media marketer
+Team lead
+Technical Support Staff (Temporary)
+Web developer
+
+
+
+Though the Bootcamp had been successfully registered as a not-for-profit further education college - the City Open College Foundation - with the Corporate Affairs Commission of the Federal Republic of Nigeria, a total sum of N5,000,000.00 (i.e., $12,174.53) needed to be raised for its accreditation diploma courses is yet to be realised. In terms of benefits, that would also increase the number of courses we offer, expand our services, and initiate the college's accreditation process with the National Board for Technical Education in Nigeria.
+
+You can contact us via littledropedu@gmail.com as a donor or donate through any of our bank accounts. See details at the end of this report.
+During the eighth cohort for the coding pathway, we introduced Business Intelligence and Data Analysis courses to prepare the mentees for new employment opportunities in areas that are both tech-savvy and data-induced.
+
+Following the directions from the management, the admin team of the Little Drop Education Bootcamp are currently working assiduously to achieve the mandate on the building and hosting of a new website for the institution. 
+
+SETBACKS
+Kickbacks are frowned at because they tend to take undue advantage of their victims. This is unlike setbacks; they are strengths for every keen planner that takes every opportunity as a means to attain success. Such are the cases of the setbacks identified to have posed one challenge or the other before the intended executables at Little Drop.
+Presently at the bootcamp, we have 167 mentees left among the mentees onboarded this year.
+Observing this, we felt the need to survey to observe what could be going on with the mentees to know where to come in for assistance; from our respondents, we discovered the unemployability and studentship of most of our mentees impinged significantly and negatively on their goals. Those unemployed and, as a result, met with financial challenges find it hard to recharge or subscribe data-wisely and optimally for their virtual learning. In the same way, the challenge of attending to schoolwork for some of the mentees currently in school caused them a distraction from focusing adequately on their training.
+Time is another identifiable cause for the setbacks witnessed by our mentees to have not recorded maximally as they desired from the onset. It may be that when they are in the mood to carry on with their online engagements, the available data on their gadgets may not be enough to get them connected to the internet. Time management has remained the number on the ladder of setbacks mitigating against interns' success at the Bootcamp.
+Another related issue here is a power outage. The country’s power supply is second to none in terms of unreliability. Mentees whose gadgets must be plugged into the socket headlong to have them carry out their virtual training are in the dilemma of either restarting as many times as the power gets switched on and off or losing their precious data in the process. Though Little Drop Education offers services that could help some genuinely needy mentees with some data token, it got stopped due to financial constraints. Also, little or nothing can be done regarding the power outage. 
+Bulleted list of factors militating against the desired progress and success in the training at LD:
+Time (lack of adequate time to practice)
+Internet data (lack of access to sufficient Internet data)
+Poor electricity supply (lack of enough access to electric power to power your computer or phone)
+Poor Internet connection (the Internet connection in your area is poor)
+Procrastination (I usually postpone when I will study and typically end up not doing any learning)
+Schoolwork (I had essays, assignments, classes, exams etc. to attend to in school)
+Sick (I fell ill during the Bootcamp)
+Money (I could not afford to purchase adequate Internet data)
+Gadget (I do not have access to a mobile phone, computer or laptop to use for my training)
+Confidence (I lack the confidence that I can learn to program)
+Struggle (I find learning programming challenging)
+
+STRATEGIES TO CURTAIL THE WITNESSED SETBACKS
+For the remaining half of the year 2022, we plan to:
+ Intensify our social handles more engagingly for the benefit of our in-house mentees and the general public to harness support and more intakes across cultural, occupational and continental boundaries.
+Seek more funds from our known and regular donors and win over new and willing well-wishers from within and outside the country.
+Direct our webinar’s topics towards the immediate needs and goals of in-house mentees and the would-be ones among the audience members as participants in our programs or as readers of the contents of our social media platforms.
+Continue to bridge the gaps between the female and male applicants to uphold the relevance of technical knowledge to the girl-child. 
+Document and direct the mentees to the progress being made by our ex-mentees to encourage them to take their learning and training seriously.
+Encourage the graduating mentees to take part in serving as mentors to our newly admitted applicants while gathering other experience and industry ethics during the waiting period before clinching the job of their dreams.
+Continue liaison with viable tech-induced companies to take our mentees as interns or entry-level employees while in the bootcamp and when graduating.
+Finally, we are delighted to have gone this far on our plans for the year 2022. We wish to work by the above deliverables to effect further positive impacts on our mentees and the training offered at LD. Though the intended plans on introducing a comprehensive game development course in extended reality (XR) and in preparing mentees for the future of digital technology - metaverse are not forgotten and yet unachieved, we hope to see the birth of the new website making these and other plans falling in place.
+ACKNOWLEDGEMENT
+We thank Allah for providing us with the openness and opportunity to turn in the little we have done. May He make them more beneficial than we ever thought. Our sincere gratitude also goes to the LD Management for believing in us and entrusting us with the obligations at LD. 
+Special thanks to our donors, staff, mentees, volunteers, well-wishers, Codeware (a business solution consulting company and Gold Certified Microsoft Partner for Microsoft Dynamics Solutions), FreeCodeCamp.Org and Coursera - two leading online learning platforms that have been of immense use in delivering our training.
   </main>
   <!-------------------------------------Footer---------------------------------------------------------------------------->
 <footer id="footer">
@@ -118,5 +196,6 @@
     <span class="copyright">&copy; Littledrop Education Bootcamp, 2022.</span>
 </footer>
 <script src="script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

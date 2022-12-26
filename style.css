@@ -19,38 +19,45 @@ body{
   /* background-color: #004aad; */
   font-family: 'Lato', sans-serif;
   font-family: 'Poppins', sans-serif;
-  min-width: 100%;
-  color:#1d5191;
+  color: #1d5191;
 }
-.container{
-  top: 0;
-  max-width: 100%;
-  background-color: #004aad;
-  position: fixed;
-  z-index: 1;
-  left: 0px;
-  overflow: hidden;
-}
-#navbar{
-  min-width: 100%;
+/* .container{
+  width: 100%;
+} */
+.navbar{
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px; 
   padding-bottom: 20px;
   align-items: center;
-  /* background-color: #004aad; */
+  top: 0;
+  background-color: #004aad;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  /* overflow: hidden; */
 }
+
 .container-fluid{
-  width: 100%;
   cursor:pointer;
+  /* min-width: 100%; */
 }
 .menu{
   color: #fe6601;
+  margin-bottom: 0px;
   font-size: 24px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .toggle{
-  margin-left: 10px;
+  margin-left: 0px;
+}
+.list-view{
+  display: flex;
+  /* display: inline-flex;*/
+  justify-content: flex-start;
+  align-items: center;
 }
 .close-bar{
   margin-left: 10px;
@@ -168,8 +175,8 @@ main{
 .block-text{
   margin-left: 60px;
 }
-.block-list{
-  font-size: 14px;
+.block-list li{
+  font-size: 16px;
   font-weight: 500;
   margin-left: 100px;
   margin-right: 100px;
@@ -352,14 +359,15 @@ h3{
   font-size: 15px;
  } 
 
-/*-------------------------------2022------------------------------------------*/
-main{
+/*-------------------------------Bi-Annual 2022------------------------------------------*/
+.bi-annual2{
   position: relative;
   margin: 50px;
   max-width: 100%;
 
 }
 .introduction{
+  margin-top: 120px;
   margin-left:auto;
   font-size: 40px;
   color:unset;
@@ -382,54 +390,57 @@ h2{
   height: 600px;
 }
 
+/*-------------------------------------------------------------------------------Annual 2022-----------------------------------------------------*/
+
+.annual-2022{
+  padding-top: 150px;
+}
+.overview{
+  font-weight: italic;
+}
+
+
+
+
+
+
 @media screen and (max-width: 767px){
   body{
     max-width: 767px;
+    /* min-width: 100%; */
   }
-  .container{
-    overflow:hidden;
-    right: 0px;
-    padding: 0px;
-    width: 100%;z-index: 9;
-    position: fixed;
-     }
-  #navbar{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 60px;
-    z-index: 9;
+  .container {
     padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-right: 0px;
-    overflow: hidden;
-    width: 100%;
-  } 
-  .container-fluid{
-    padding: 0px;
-    width:auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .navbar> .container-fluid{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content:space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    overflow: hidden;
-    width: 100%;
-  }
+    max-width: 100%;
+}
+.navbar.navbar-expand-lg{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  left: -20px;
+  padding: 0.5rem;
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+.navbar-expand-lg{
+  min-width: 100%;
+}
  
   .logo{
     height: 40px;
-    width: 120px;
-    /* margin-left: 20px; */
+    margin-left: 20px;
   }
   .menu{
-    /* padding-right: 20px; */
+   
     font-size: 20px;
     margin-bottom: 0px;
-    /* margin-left: 80px; */
+  
   }
   .toggle{
     margin-left: 0px;
@@ -437,6 +448,7 @@ h2{
 .menu-close{
   justify-content: flex-start;
   margin-top: 30px;
+
 }
 .close-bar{
   height: 30px;
@@ -458,6 +470,7 @@ h2{
     padding: 5px 6px 5px 6px;
   }
   .container2{
+   max-width: 100%;
    background-size: 500px;
    margin-top: 50px;
    margin-bottom: -450px;
@@ -467,11 +480,6 @@ h2{
     margin-bottom: 0px;
   }
   .header{
-    /* margin-top: 30px;
-    font-size: 45px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    margin-right: 0px; */
     display: none;
   }
   .bold{
@@ -499,6 +507,7 @@ h2{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
+    width: 100%;
   }
   .stand-for{
     flex-direction: column-reverse;
@@ -511,7 +520,7 @@ h2{
   
   }
   p{
-    font-size: 15px;
+    font-size: 14px;
   }
   .blockqoute-img{
     height: 300px;
@@ -535,11 +544,13 @@ h2{
     margin: 0px;
   }
 .block-list li{
-  font-size: 16px;
+  font-size: 14px;
+  margin: 0px;
 }
   .highlight-header{
     margin-top: 50px;
     margin: auto;
+    margin-bottom: 20px;
   }
   h2, h3{
     font-size: 20px;

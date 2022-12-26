@@ -3,7 +3,7 @@ let upto =0;
 function updated(){
     var count= document.getElementById("counter");
     count.innerHTML=++upto;
-    if(upto===956)
+    if(upto===915)
     {
         clearInterval(counts);
     }
@@ -20,38 +20,68 @@ function hide(){
   }
   hide();
 
+// Load the Visualization API and the corechart package.
+google.charts.load('current', {'packages':['corechart']});
+
+// Set a callback to run when the Google Visualization API is loaded.
+google.charts.setOnLoadCallback(drawChart);
+
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart() {
+
+  // Create the data table.
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Topping');
+  data.addColumn('number', 'Slices');
+  data.addRows([
+    ['Data Analysis with Business Intelligence', 3],
+    ['Data Science', 1],
+    ['Employability Skills', 1],
+    ['Social Media Management', 1],
+    ['Web Development', 2]
+  ]);
+
+  // Set chart options
+  var options = {'title':'Number of Mentees in the bootcamp',
+                 'width':400,
+                 'height':300};
+
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}
 
 
-
-// anychart.onDocumentReady(function() {
+ anychart.onDocumentReady(function() {
 
 //   // set the data
-//   var data = [
-//       {x: "Coding", value: 316},
-//       {x: "Non-coding", value: 198}
-
-//   ];
-//   //,exploded: true
-//   // create the chart
-//   var chart = anychart.pie();
+ var data = [
+       {x: "Coding", value: 316},
+      {x: "Non-coding", value: 198}
+];
+ //,exploded: true
+  // create the chart
+  var chart = anychart.pie();
   
-//   // set the chart title
-//   chart.title("Count of Coding and Non-coding intake");
+   // set the chart title
+   chart.title("Count of Coding and Non-coding intake");
   
 //   // sort elements
-//   chart.sort("desc");
+  chart.sort("desc");
 //   // add the data
-//   chart.data(data);
+   chart.data(data);
 //   // set legend position
-//   chart.legend().position("right");
+   chart.legend().position("right");
 //   // set items layout
-//   chart.legend().itemsLayout("vertical");
+  chart.legend().itemsLayout("vertical");
   
 //   // display the chart in the container
-//   chart.container('total');
-//   chart.draw();
+ chart.container('total');
+  chart.draw();
   
-//   });
+  });
 
 
 
@@ -64,166 +94,160 @@ function hide(){
 
 
 
-
-
-
-
-
-
-// anychart.onDocumentReady(function() {
+ anychart.onDocumentReady(function() {
 
 //   // set the data
-//   var data = {
-//       header: ["Name", "Month"],
-//       rows: [
-//         ["Lagos",	132],
-//         ["Ogun",	26],
-//         ["Osun",	53],
-//         ["Kwara",	22],
-//         ["FCT",	8],
-//         ["Malaysia", 1],
-//         ["KSA",	1],
-//         ["Rivers", 5],
-//         ["Ghana",	1],
-//         ["Oyo",	31],
-//         ["Bauchi",	1],
-//         ["Kaduna",	4],
-//         ["Kano",	4],
-//         ["Njadema",	1],
-//         ["Kogi",	1],
-//         ["Benue",	1],
-//         ["Edo",	6],
-//         ["Enugu",	1],
-//         ["Zamfara",	1],
-//         ["Ekiti",	2],
-//         ["Kenya",	1],
-//         ["Sokoto",	2],
-//         ["Delta",	1],
-//         ["Ondo",	9]
+  var data = {
+      header: ["Name", "Month"],
+      rows: [
+        ["Lagos",	132],
+        ["Ogun",	26],
+        ["Osun",	53],
+        ["Kwara",	22],
+        ["FCT",	8],
+        ["Malaysia", 1],
+        ["KSA",	1],
+        ["Rivers", 5],
+        ["Ghana",	1],
+        ["Oyo",	31],
+        ["Bauchi",	1],
+        ["Kaduna",	4],
+        ["Kano",	4],
+        ["Njadema",	1],
+        ["Kogi",	1],
+        ["Benue",	1],
+        ["Edo",	6],
+        ["Enugu",	1],
+        ["Zamfara",	1],
+        ["Ekiti",	2],
+        ["Kenya",	1],
+        ["Sokoto",	2],
+        ["Delta",	1],
+        ["Ondo",	9]
         
-//   ],
-//   backgroundColor: ["red", "blue", "green", "blue", "red"]
-// };
+  ],
+  backgroundColor: ["red", "blue", "green", "blue", "red"]
+};
 
 //   // create the chart
-//   chart = anychart.column();
+  chart = anychart.column();
   
-//   // add the data
-//   chart.data(data);
+  // add the data
+  chart.data(data);
 
-//   // set the chart title
-//   chart.title("Coding Mentees Residential Area");
+  // set the chart title
+  chart.title("Coding Mentees Residential Area");
 
-//   // draw
-//   chart.container("resident");
-//   chart.draw();
-// });
+  // draw
+  chart.container("resident");
+  chart.draw();
+});
 
 
-// anychart.onDocumentReady(function() {
+anychart.onDocumentReady(function() {
 
-//   // set the data
-//   var data = {
-//       header: ["Name", "Month"],
-//       rows: [
-//         ["Lagos",	53],
-//         ["Ogun",	16],
-//         ["Osun",	47],
-//         ["Kwara",	12],
-//         ["FCT",	4],
-//         ["Warrington",	1],
-//         ["Borno",	2],
-//         ["Rivers",	5],
-//         ["Akwa Ibom",	3],
-//         ["Oyo",	27],
-//         ["Benue",	1],
-//         ["Kaduna",	7],
-//         ["Kano",	2],
-//         ["Katsina",	2],
-//         ["Kogi",	3],
-//         ["Imo",	1],
-//         ["Edo",	1],
-//         ["Zamfara",	1],
-//         ["Ekiti",	1],
-//         ["Niger",	2],
-//         ["Sokoto",	1],
-//         ["Delta",	2],
-//         ["Ondo",	8]
-//   ]};
+  // set the data
+  var data = {
+      header: ["Name", "Month"],
+      rows: [
+        ["Lagos",	53],
+        ["Ogun",	16],
+        ["Osun",	47],
+        ["Kwara",	12],
+        ["FCT",	4],
+        ["Warrington",	1],
+        ["Borno",	2],
+        ["Rivers",	5],
+        ["Akwa Ibom",	3],
+        ["Oyo",	27],
+        ["Benue",	1],
+        ["Kaduna",	7],
+        ["Kano",	2],
+        ["Katsina",	2],
+        ["Kogi",	3],
+        ["Imo",	1],
+        ["Edo",	1],
+        ["Zamfara",	1],
+        ["Ekiti",	1],
+        ["Niger",	2],
+        ["Sokoto",	1],
+        ["Delta",	2],
+        ["Ondo",	8]
+  ]};
 
 //   // create the chart
-//   chart = anychart.column();
+  chart = anychart.column();
   
-//   // add the data
-//   chart.data(data);
+  // add the data
+  chart.data(data);
 
-//   // set the chart title
-//   chart.title("Non-Coding Mentees Residential Area");
+  // set the chart title
+  chart.title("Non-Coding Mentees Residential Area");
 
-//   // draw
-//   chart.container("resident-noncoding");
-//   chart.draw();
-// });
+  // draw
+  chart.container("resident-noncoding");
+  chart.draw();
+});
 
-// anychart.onDocumentReady(function() {
+anychart.onDocumentReady(function() {
 
-//   // set the data
-//   var data = [
-//       {x: "Male coding", value: 307},
-//       {x: "Female Coding", value: 140},
-//       {x: "Male Non-coding", value: 307},
-//       {x: "Female Non-coding", value: 140}
+  // set the data
+  var data = [
+      {x: "Male coding", value: 307},
+      {x: "Female Coding", value: 140},
+      {x: "Male Non-coding", value: 307},
+      {x: "Female Non-coding", value: 140}
 
-//   ];
-//   //,exploded: true
-//   // create the chart
-//   var chart = anychart.pie();
+  ];
+  //,exploded: true
+  // create the chart
+  var chart = anychart.pie();
   
-//   // set the chart title
-//   chart.title("Gender count of mentees from both pathway(Coding and Noncoding)");
+  // set the chart title
+  chart.title("Gender count of mentees from both pathway(Coding and Noncoding)");
   
-//   // sort elements
-//   chart.sort("desc");
-//   // add the data
-//   chart.data(data);
-//   // set legend position
-//   chart.legend().position("right");
-//   // set items layout
-//   chart.legend().itemsLayout("horizontal");
+  // sort elements
+  chart.sort("desc");
+  // add the data
+  chart.data(data);
+  // set legend position
+  chart.legend().position("right");
+  // set items layout
+  chart.legend().itemsLayout("horizontal");
   
-//   // display the chart in the container
-//   chart.container('gender');
-//   chart.draw();
+  // display the chart in the container
+  chart.container('gender');
+  chart.draw();
   
-//   });
+  });
 
-//   anychart.onDocumentReady(function() {
+  anychart.onDocumentReady(function() {
 
-//     // set the data
-//     var data = {
-//         header: ["Name", "Month"],
-//         rows: [
-//           ["Employed",	53],
-//           ["Employed",	16],
-//           ["Student",	53],
-//           ["Student",	16],
-//           ["Unemployed",	47],
-//           ["Unemployed",	12]
-//     ]};
+    // set the data
+    var data = {
+        header: ["Name", "Month"],
+        rows: [
+          ["Employed",	53],
+          ["Employed",	16],
+          ["Student",	53],
+          ["Student",	16],
+          ["Unemployed",	47],
+          ["Unemployed",	12]
+    ]};
   
 //     // create the chart
-//     chart = anychart.column();
+    chart = anychart.column();
     
-//     // add the data
-//     chart.data(data);
+    // add the data
+    chart.data(data);
   
-//     // set the chart title
-//     chart.title("Employement status of Mentees on both pathway");
+    // set the chart title
+    chart.title("Employement status of Mentees on both pathway");
   
-//     // draw
-//     chart.container("container");
-//     chart.draw();
-//   });
+    // draw
+    chart.container("container");
+    chart.draw();
+  });
   
 
 //Donation tab===========================================================================
@@ -252,8 +276,6 @@ function hideDiv(){
 //     ["Armenia (1988)", 25000],
 //     ["Iran (1990)", 50000]
 // ]}
-{/* <div id="container" style="width: 100%; height: 100%"></div>
-<script>
     anychart.onDocumentReady(function() {
 
 // set the data
@@ -278,9 +300,9 @@ chart.legend().position("right");
 // set items layout
 chart.legend().itemsLayout("vertical");
 
-// display the chart in the container
+ //display the chart in the container
 chart.container('container');
 chart.draw();
 
 });
-</script> */}
+

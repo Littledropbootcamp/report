@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>Littledrop Report Website</title>
-  <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
-  <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" media="screen and (max-width: 767px)" href="style.css"/>
   <link rel="stylesheet" media="screen and (min-width: 768px)" href="style.css"/>
   <link rel="stylesheet" media="screen and (min-width:1200px)" href="style.css"/>
   <link rel="stylesheet" href="style.css"/>
-  
-  
+  <title>Littledrop Report Website</title>
+  <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
+  <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+</script>
 </head>
 <body id="home">
   <div class="container">
@@ -49,13 +53,20 @@
     </div>
   </nav>
 </div>
+
+<main class="annual-2022">
+  <h1>2022 <span class="overview">Overview</span></h1>
+  <p>The year 2022 has been an amazing one for us as we have grown beyond the initial 3 courses we started the year with in January (cohort 7), Data Science, Mobile App Development and Web Development, with 144 registered mentees (see figure 1.0 for the analysis), to the introduction of Non-coding courses in February (Non-coding cohort 1), Digital Marketing, Employability skills, Social Media Management and Project Management(see figure 1.1 for the analysis) of which we started the onboarding process in March. With this new development, we expanded our admin team by employing 2 interns for the administrative role through an interview; the need arose for our team lead to go on leave we employed one more intern to keep the bootcamp running. After the one-month duration of learning and extension, mentees who met up with the deadline were moved to the next phase (phase 2), while those who didn’t were evicted from the bootcamp to avoid being taken for granted.
+  </p>
   <figure class="text-center">
-  <blockquote class="blockquote">
-    <p>A well-known quote, contained in a blockquote element.</p>
-  </blockquote>
-  <figcaption class="blockquote-footer">
-    Someone famous in <cite title="Source Title">Source Title</cite>
-  </figcaption>
+    <blockquote class="blockquote">
+      <p>The Journey of a thousand miles starts with a single step.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">Lao Tzu</cite>
+    </figcaption>
 </figure>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
