@@ -680,6 +680,9 @@ h2{
     height: 30px;
     padding: 5px;
   }
+  .copyright{
+    font-size: 12px;
+  }
 } 
 @media (min-width: 501px) and (max-width: 767px){
   .container2{
