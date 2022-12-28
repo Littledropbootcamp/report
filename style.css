@@ -38,29 +38,36 @@ body{
   z-index: 1;
   left: 0;
   /* overflow: hidden; */
-}
+} 
 
 .container-fluid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor:pointer;
   /* min-width: 100%; */
 }
 .menu{
   color: #fe6601;
+  text-decoration: none;
   margin-bottom: 0px;
   font-size: 24px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.menu:hover{
+  color: #fe6601;
+}
 .toggle{
   margin-left: 0px;
 }
-.list-view{
+/* .list-view{
   display: flex;
-  /* display: inline-flex;*/
   justify-content: flex-start;
   align-items: center;
-}
+} */
 .close-bar{
   margin-left: 10px;
+  height: 40px;
 }
 .menu-close{
   color: #fe6601;
@@ -117,7 +124,7 @@ body{
 .container2{
   height: 100vh;
   max-width: 100%;
-  background-image: url('Images/homepage-bg.png');
+  background-image: url('Images/mobile-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -125,9 +132,15 @@ body{
   left: 0px;
   padding-left:0px;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
-.background{
-  margin-top: 220px;
+.background-img{
+  margin-top: 200px;
+  margin-right: 150px;
+  border-radius: 180px;
 
 }
 .header{
@@ -139,15 +152,24 @@ body{
 }
 .header-text{
   color: #004aad;
-  font-size: 18px;
-  line-height: 2rem;
-  margin-right: 50%;
+  font-size: 28px;
+  line-height: 3rem;
+  margin-right: 0%;
   margin-left: 50px;
   font-weight: 500;
 }
+.bold{
+  display: none;
+}
+/* .growth, .impact{
+  font-size: 70px;
+  color: #fe6601;
+}*/
 .little{
   color:#fe6601;
-}
+  font-size: 28px;
+  font-weight: 700;
+} 
 /*-----------------------------------------------MAIN-----------------------------------------------*/
 main{
   margin-left: 80px;
@@ -185,7 +207,7 @@ main{
 /*----------------------------------------------------Highlights--------------------------------------------*/
 .highlight-header{
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
   margin-bottom: 50px;
   margin-top: 100px;
 }
@@ -421,25 +443,27 @@ h2{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  left: -20px;
-  padding: 0.5rem;
+  padding: 0px;
   z-index: 9;
   position: fixed;
-  width: 100%;
   overflow: hidden;
 }
-.navbar-expand-lg{
-  min-width: 100%;
-}
- 
+.container-fluid{
+  /* position: fixed;
+  overflow: hidden; */
+  height: 60px;
+  padding: 0px;
+  justify-content: space-between;
+  align-items: center;
+} 
   .logo{
     height: 40px;
     margin-left: 20px;
   }
   .menu{
-   
     font-size: 20px;
     margin-bottom: 0px;
+    margin-right: 20px;
   
   }
   .toggle{
@@ -470,44 +494,51 @@ h2{
     padding: 5px 6px 5px 6px;
   }
   .container2{
-   max-width: 100%;
-   background-size: 500px;
-   margin-top: 50px;
-   margin-bottom: -450px;
+    flex-direction: column-reverse;
+    height: 70vh;
+    width: 100%;
+    /* background-size: 700px; */
+    /* background-image: none; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
   }
-  .background{
-    margin-top: 100px;
+  .background-img{
+    margin-right: 50px;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 0px;
     margin-bottom: 0px;
+    border-radius: 100px;
   }
   .header{
     display: none;
   }
   .bold{
+    display: block;
     font-size: 40px;
     font-weight: 700;
+    margin-bottom: 10px;
   }
   .header-text{
+    text-align: right;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5rem;
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: -30px;
     margin-bottom: 0px;
   }
   .little{
     font-weight: bold;
+    font-size: 13px;
   }
   main{
-    /* top: 0;
-    right: 0;
-    z-index: 0; */
     position: relative;
-    /* min-width: 100%; */
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
-    width: 100%;
   }
   .stand-for{
     flex-direction: column-reverse;
@@ -515,9 +546,11 @@ h2{
     margin-top: 40px;
     width: 100%;
     position: relative;
-    margin-left: 20px;
-    padding-right: 40px;
-  
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .what-we-stand-for{
+    margin: 0px;
   }
   p{
     font-size: 14px;
@@ -650,13 +683,19 @@ h2{
 } 
 @media (min-width: 501px) and (max-width: 767px){
   .container2{
-    background-size: 100%;
+    height: 100vh;
+    /* background-size: 100%; */
   }
   .header-text{
     padding-top: 50px;
   }
 }
 @media (min-width: 655px) and (max-width: 767px){
+  .container2{
+    height: 100vh;
+    margin-bottom: 50px;
+    /* background-size: 100%; */
+  }
   .header-text{
     padding-top: 100px;
   }

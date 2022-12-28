@@ -8,11 +8,11 @@
   <title>Littledrop Report Website</title>
   <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
   <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
-  <link rel="stylesheet" media="screen and (max-width: 767px)" href="style.css"/>
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="style.css"/>
-  <link rel="stylesheet" media="screen and (min-width:1200px)" href="style.css"/>
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="style.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="style.css">
+  <link rel="stylesheet" media="screen and (min-width:1200px)" href="style.css">
   <link rel="stylesheet" href="style.css"/>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body id="home">
   <div class="container">
@@ -20,9 +20,10 @@
       <div class="container-fluid">
       <a href="index.html"><img class="logo" src="Images/ld-logo.svg" alt="Title-icon"/></a>
       <div class="list-view">
-        <p class="menu">Menu</p>
+        <a class="menu" href="#">Menu
           <img onclick="myMenu()" class="toggle" src="Images/toggle-bar.png"/>
-      <ul id="menuList" class="list">
+        </a>
+          <ul id="menuList" class="list">
         <p class="menu-close">close<img onclick="hide()" class="close-bar" src="Images/close.png"/></p>
      
         <li class="nav-item dropdown">
@@ -42,7 +43,7 @@
             <li><a class="dropdown-item" href="/Annual2021.html">2021</a></li>
             <li><a class="dropdown-item" href="Annual2022.html">2022</a></li>
           </ul>
-        </li>
+      </li>  fgaz
         <button type="button" class="btn btn-primary btn-sm">Download full Report</button>
         </ul> 
       </div>  
@@ -53,17 +54,18 @@
   <div class="container2">
     <div class="background">
       <h1 class="header">2022</h1>
-      <p class="header-text"><span class="bold">2022</span> has been an amazing year for us, from increase in number of mentees onboarded, reaching locations outside Nigeria, to mentees completing their courses, to mentees 
-        getting employed, We look forward to another year of growth at
-         <span class="little">Little Drop Bootcamp</span>.</p>
+      <p class="header-text"><span class="bold">2022</span> has been an amazing year of growth and impact for us at <span class="little">Little Drop Bootcamp.</span></p>
+         <!-- <p class="header-text"><span class="bold">2022</span>a <span class="year"> year</span> of <span class="growth"> growth</span> and <span class="impact">impact</span> at
+          <span class="little">Little Drop Bootcamp</span>.</p> -->
     </div>
+    <img class="background-img" src="images/design.jpg" alt="background-image"/>
   </div>
 
 
 <main>
   <div class="stand-for">
     <img class="blockquote-img" src="Images/productivity.jpg" alt="home-img"/>
-    <div>
+    <div class="what-we-stand-for">
     <h2 class="block-text">What We Stand For<img class="arrow" src="Images/arrow.jpg" /><hr></h2>
       <p>Little Drop Education Coding Bootcamp is an online-based not-for-profit charity where our mentees with little or no coding knowledge train to develop coding skills in three different learning pathways: Data Science, Mobile App Development and Web Development through the provision of adequate resources, guidance, and mentorship. We use free learning resources from FreeCodeCamp and the financial aid programme of Coursera.
       <p><strong>Our Aim:</strong>
