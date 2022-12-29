@@ -170,7 +170,7 @@ function drawChart() {
 
 
 
- anychart.onDocumentReady(function() {
+ /*anychart.onDocumentReady(function() {
 
 //   // set the data
   var data = {
@@ -217,7 +217,7 @@ function drawChart() {
   // draw
   chart.container("resident");
   chart.draw();
-});
+});*/
 
 
 anychart.onDocumentReady(function() {
