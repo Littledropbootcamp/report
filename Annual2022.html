@@ -17,12 +17,14 @@
 </head>
 <body id="home">
   <div class="container">
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
       <a href="index.html"><img class="logo" src="Images/ld-logo.svg" alt="Title-icon"/></a>
-      <div>
-        <p class="menu">Menu<img onclick="myMenu()" class="toggle" src="Images/toggle-bar.png"/></p>
-      <ul id="menuList" class="list">
+      <div class="list-view">
+        <a class="menu" href="#">Menu
+          <img onclick="myMenu()" class="toggle" src="Images/toggle-bar.png"/>
+        </a>
+          <ul id="menuList" class="list">
         <p class="menu-close">close<img onclick="hide()" class="close-bar" src="Images/close.png"/></p>
      
         <li class="nav-item dropdown">
@@ -30,7 +32,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="2021.html">2021</a></li>
-            <li><a class="dropdown-item" href="2022.html">2022</a></li>
+            <li><a class="dropdown-item" href="biannual2022.html">2022</a></li>
           </ul>
         </li>
         <!-- <li><a href="./2021.html">Bi-annual Report</a></li> -->
@@ -42,13 +44,15 @@
             <li><a class="dropdown-item" href="Annual2021.html">2021</a></li>
             <li><a class="dropdown-item" href="Annual2022.html">2022</a></li>
           </ul>
-        </li>
+      </li> 
         <button type="button" class="btn btn-primary btn-sm">Download full Report</button>
         </ul> 
       </div>  
     </div>
   </nav>
 </div>
+
+<!-------------------------------------------End of Navbar------------------------------------------------------------------------->
 
 <main class="annual-2022">
   <h1>2022 <span class="overview">Overview</span></h1>
