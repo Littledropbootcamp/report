@@ -20,6 +20,82 @@ function hide(){
   }
   hide();
 
+  
+//Bi-annual 2022 graphs//
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+        ["Name", "Month"],
+        ["Lagos",	132],
+        ["Ogun",	26],
+        ["Osun",	53],
+        ["Kwara",	22],
+        ["FCT",	8],
+        ["Malaysia", 1],
+        ["KSA",	1],
+        ["Rivers", 5],
+        ["Ghana",	1],
+        ["Oyo",	31],
+        ["Bauchi",	1],
+        ["Kaduna",	4],
+        ["Kano",	4],
+        ["Njadema",	1],
+        ["Kogi",	1],
+        ["Benue",	1],
+        ["Edo",	6],
+        ["Enugu",	1],
+        ["Zamfara",	1],
+        ["Ekiti",	2],
+        ["Kenya",	1],
+        ["Sokoto",	2],
+        ["Delta",	1],
+        ["Ondo",	9]
+  ]);
+
+  var options = {
+    chart: {
+      title: 'Mentees Residence Within and Outside Nigeria',
+      subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+    }
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('resident'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+
+
+  // 2022 Statistical analysis with graphs using google charts//
+  google.charts.load('current', {
+    'packages':['geochart'],
+  });
+  google.charts.setOnLoadCallback(drawRegionsMap);
+
+  function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+      ['Country', 'Mentees'],
+      ['Kenya', 1],
+      ['Morocco', 1],
+      ['Ghana', 1],
+      ['Saudi Arabia', 3],
+      ['Nigeria', 899],
+      ['Texas', 1],
+      ['Chad', 1],
+      ['Malaysia', 1],
+      ['South-Africa', 1],
+      ['Canada', 1],
+      ['United Kingdom', 3]
+    ]);
+
+    var options = {};
+
+    var chart = new google.visualization.GeoChart(document.getElementById('location_div'));
+
+    chart.draw(data, options);
+  }
+
 // Load the Visualization API and the corechart package.
 google.charts.load('current', {'packages':['corechart']});
 
