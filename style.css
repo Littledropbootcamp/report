@@ -76,7 +76,9 @@ body{
   justify-content: flex-end;
   margin-right: 30px;
   text-decoration: none;
-  
+}
+.menu-close:hover{
+  color: #fe6601;
 }
 .list{
   background-color: #004aad;
@@ -269,9 +271,10 @@ h3{
 .btn-link{
   color: #fe6601;
   text-align: right;
-  justify-self: flex-end;
+  align-self: flex-end;
   font-weight: 700;
-  margin: auto;
+  margin-left: 75%;
+  /* margin-right: 80px; */
 }
 
 
