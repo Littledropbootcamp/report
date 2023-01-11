@@ -3,7 +3,7 @@ let upto =0;
 function updated(){
     var count= document.getElementById("counter");
     count.innerHTML=++upto;
-    if(upto===915)
+    if(upto===913)
     {
         clearInterval(counts);
     }
