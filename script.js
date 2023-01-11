@@ -81,21 +81,25 @@ function drawChart() {
       ['Ghana', 1],
       ['Saudi Arabia', 3],
       ['Nigeria', 899],
-      ['Texas', 1],
+      ['United States', 1],
       ['Chad', 1],
       ['Malaysia', 1],
-      ['South-Africa', 1],
+      ['South Africa', 1],
       ['Canada', 1],
       ['United Kingdom', 3]
     ]);
 
-    var options = {};
+    var options = 
+      {
+        'title': 'Mentees Residence Within and Outside Nigeria'
+      };
 
     var chart = new google.visualization.GeoChart(document.getElementById('location_div'));
 
     chart.draw(data, options);
   }
 
+  //Piechart gender count
 // Load the Visualization API and the corechart package.
 google.charts.load('current', {'packages':['corechart']});
 
@@ -112,22 +116,64 @@ function drawChart() {
   data.addColumn('string', 'Topping');
   data.addColumn('number', 'Slices');
   data.addRows([
-    ['Data Analysis with Business Intelligence', 3],
-    ['Data Science', 1],
-    ['Employability Skills', 1],
-    ['Social Media Management', 1],
-    ['Web Development', 2]
+    ['Female', 2.],
+    ['Males', 4]
   ]);
 
   // Set chart options
-  var options = {'title':'Number of Mentees in the bootcamp',
-                 'width':400,
-                 'height':300};
+  var options = {};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
   chart.draw(data, options);
 }
+
+
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Element', 'Density', { role: 'style' }],
+          ['Copper', 8.94, '#b87333'],            // RGB value
+          ['Silver', 10.49, 'silver'],            // English color name
+          ['Gold', 19.30, 'gold'],
+ 
+        ['Platinum', 21.45, 'color: #e5e4e2' ], // CSS-style declaration
+       ]);
+        // var data = new google.visualization.arrayToDataTable([
+        //   ['Galaxy', 'Distance', 'Brightness'],
+        //   ['Canis Major Dwarf', 8000, 23.3],
+        //   ['Sagittarius Dwarf', 24000, 4.5],
+        //   ['Ursa Major II Dwarf', 30000, 14.3],
+        //   ['Lg. Magellanic Cloud', 50000, 0.9],
+        //   ['Bootes I', 60000, 13.1]
+        // ]);
+
+        var options = {
+          width: 800,
+          chart: {
+            title: 'Nearby galaxies',
+            subtitle: 'distance on the left, brightness on the right'
+          },
+        //   bars: 'horizontal', // Required for Material Bar Charts.
+        //   series: {
+        //     0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
+        //     1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
+        //   },
+        //   axes: {
+        //     x: {
+        //       distance: {label: 'parsecs'}, // Bottom x-axis.
+        //       brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
+        //     }
+        //   }
+        };
+
+      var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+      chart.draw(data, options);
+    };
+  
+
 
 
  anychart.onDocumentReady(function() {
