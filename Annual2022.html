@@ -1,110 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" media="screen and (max-width: 767px)" href="style.css"/>
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="style.css"/>
-  <link rel="stylesheet" media="screen and (min-width:1200px)" href="style.css"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="style.css" />
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="style.css" />
+  <link rel="stylesheet" media="screen and (min-width:1200px)" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
   <title>Littledrop Report Website</title>
   <link rel="icon" type="image/svg" sizes="28x28" href="Images/Title-icon.png">
   <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
+
 <body id="home">
   <div class="container">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-      <a href="index.html"><img class="logo" src="Images/ld-logo.svg" alt="Title-icon"/></a>
-      <div class="list-view">
-        <a class="menu" href="#">Menu
-          <img onclick="myMenu()" class="toggle" src="Images/toggle-bar.png"/>
-        </a>
+        <a href="index.html"><img class="logo" src="Images/ld-logo.svg" alt="Title-icon" /></a>
+        <div class="list-view">
+          <a class="menu" href="#">Menu
+            <img onclick="myMenu()" class="toggle" src="Images/toggle-bar.png" />
+          </a>
           <ul id="menuList" class="list">
-        <a class="menu-close" href="#">close<img onclick="hide()" class="close-bar" src="Images/close.png"/></a>
-     
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bi-annual Report
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="2021.html">2021</a></li>
-            <li><a class="dropdown-item" href="biannual2022.html">2022</a></li>
-          </ul>
-        </li>
-        <!-- <li><a href="./2021.html">Bi-annual Report</a></li> -->
-        <!-- <li><a>Annual Report</a></li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Annual Report
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="Annual2021.html">2021</a></li>
-            <li><a class="dropdown-item" href="Annual2022.html">2022</a></li>
-          </ul>
-      </li> 
-        <button type="button" class="btn btn-primary btn-sm">Download full Report</button>
-        </ul> 
-      </div>  
-    </div>
-  </nav>
-</div>
+            <a class="menu-close" href="#">close<img onclick="hide()" class="close-bar" src="Images/close.png" /></a>
 
-<!-------------------------------------------End of Navbar------------------------------------------------------------------------->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Bi-annual Report
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="2021.html">2021</a></li>
+                <li><a class="dropdown-item" href="biannual2022.html">2022</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="./2021.html">Bi-annual Report</a></li> -->
+            <!-- <li><a>Annual Report</a></li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Annual Report
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="Annual2021.html">2021</a></li>
+                <li><a class="dropdown-item" href="Annual2022.html">2022</a></li>
+              </ul>
+            </li>
+            <button type="button" class="btn btn-primary btn-sm">Download full Report</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-<main class="annual-2022">
-  <h1>2022 <span class="overview">Overview</span></h1>
-  <figure class="text-center">
-    <blockquote class="blockquote">
-      <p>The Journey of a thousand miles starts with a single step.</p>
-    </blockquote>
-    <figcaption class="blockquote-footer">
-      <cite title="Source Title">Lao Tzu</cite>
-    </figcaption>
-</figure>
-  <p>The year 2022 has been an amazing one for us, as we went from three courses in January (cohort 7), where 55 registered for Data Science, 30 for Mobile App Development and 59 for Web Development, with a total of 144 registered mentees, to the introduction of Non-coding courses in February (Non-coding cohort 1). After the onboarding exercise in March, we had a total of 127 mentees for Digital Marketing, Employability Skills, Social Media Management and Project Management. 
-    Our aim for expansion is to allow mentees interested in little coding to have diverse courses to choose from. With this new development, we expanded our admin team by employing 2 interns through an interview. Also, the need arose for our team to go on leave. So, we employed one more intern to keep the Bootcamp running. 
-    After the one-month duration of learning and extension, mentees who met up with the deadline were moved to the next phase (phase 2), while those who didn’t were evicted from the Bootcamp to ensure discipline and discourage a lackadaisical attitude. 
-    In April, we welcomed our cohort 8 mentees for Coding with an introduction to Data Analysis and Business Intelligence. A total of 172 registered: 18 for Business Intelligence, 62 for Data Analysis, 20 for Data Science, 19 for Mobile App Development and 51 for Web Development.
-    Our reach expanded as we had mentees from all over Nigeria and other countries like Ghana, Kenya, Malaysia, South Africa, the UK, the USA, and NjanemaChad), Morocco. <i>(see analysis below)</i>.</p>
-    
+  <!-------------------------------------------End of Navbar------------------------------------------------------------------------->
+
+  <main class="annual-2022">
+    <h1>2022 <span class="overview">Overview</span></h1>
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>The Journey of a thousand miles starts with a single step.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">Lao Tzu</cite>
+      </figcaption>
+    </figure>
+    <p>The year 2022 has been an amazing one for us, as we went from three courses in January (cohort 7), where 55
+      registered for Data Science, 30 for Mobile App Development and 59 for Web Development, with a total of 144
+      registered mentees, to the introduction of Non-coding courses in February (Non-coding cohort 1). After the
+      onboarding exercise in March, we had a total of 127 mentees for Digital Marketing, Employability Skills, Social
+      Media Management and Project Management.
+      Our aim for expansion is to allow mentees interested in little coding to have diverse courses to choose from. With
+      this new development, we expanded our admin team by employing 2 interns through an interview. Also, the need arose
+      for our team to go on leave. So, we employed one more intern to keep the Bootcamp running.
+      After the one-month duration of learning and extension, mentees who met up with the deadline were moved to the
+      next phase (phase 2), while those who didn’t were evicted from the Bootcamp to ensure discipline and discourage a
+      lackadaisical attitude.
+      In April, we welcomed our cohort 8 mentees for Coding with an introduction to Data Analysis and Business
+      Intelligence. A total of 172 registered: 18 for Business Intelligence, 62 for Data Analysis, 20 for Data Science,
+      19 for Mobile App Development and 51 for Web Development.
+      Our reach expanded as we had mentees from all over Nigeria and other countries like Ghana, Kenya, Malaysia, South
+      Africa, the UK, the USA, and NjanemaChad), Morocco. <i>(see analysis below)</i>.</p>
+
     <h2 class="chart-title">Mentees Location across the Globe</h2>
     <div id="location_div" class="location-2022" style="width: 100%; height: 100%;"></div>
-<section>
-  <p>
-    In June, we onboarded 71 mentees for our 2nd cohort of Non-coding courses: 30 for Digital Marketing, 13 for Employability Skills, 14 for Social Media Management and 14 for Project Management.
- In July, we onboarded our 9th cohort for Coding courses with 131 registered mentees, and due to popular demand, we opened the second batch registration for this cohort; 45 mentees registered leading up to 171: 18 for Business intelligence, 54 for Data Analysis, 21 for Data Science, 20 for Mobile App Development and 57 for Web Development.
-In October 2022, the Management streamlined the Bootcamp courses to 5; 3 for the coding pathway and 2 for the Non-coding pathway (see why-pg-3). The Bootcamp onboarded its 10th cohort mentees using this new development,  a total of 204 registered for the 5 courses from Batch A, and 21 from Batch B; 91 for Data Analysis with Business Intelligence, 27 for Data Science, 18 for Employability Skills, 25 for Social Media management and 62 for Web Development.
-From January 2022 to October 2022, we have recorded 913 registered mentees, compared to 503 registered in 2021, out of which 301 are females, and 612 are males<a href="#chart_div">(see figure 2 for analysis)</a>. With the increase in female participation, we hope to see more going forward. So far, 673 mentees registered for Coding courses, and 240 registered for Non-coding courses  (see figure 3 for analysis). 
-Among the registered mentees for 2022, 267 were employed, 299 were unemployed, and 347 were students (see figure 4 for analysis). 
-With the changes and improvement in orientation and proper mentorship, we observed that more students transitioned into tech careers, even from the undergraduate level. This will give them an edge over others yet to tap into these great opportunities. 
-A total of 233 mentees have registered so far for the Web Development course, 117 for Data Analysis, 127 for Data Science, 69 for Mobile App Development, 36 for Business Intelligence, 69 for Social Media Management, 54 for Employability Skills, 48 for Project Management, 72 for Digital Marketing and 88 for Data analysis with Business Intelligence. (see fig. 5 for analysis). 
-Interestingly, the Association of University Union (ASUU) embarked on a long strike this year, and it aided our mentees' learning progress. However, quite a number of them were unable to complete their courses and meet up with the deadline due to busy schedules, internet facilities, PC, etc.  Also, when the ASUU strike was suspended, some of our mentees were unable to continue learning smoothly, and some stopped completely, as lectures and exam time -tables were fixed. We also had mentees who had to report to their NYSC camp, preventing them from completing their courses. Thus, we recorded a total of 161 mentees in the Bootcamp, with 746 mentees evicted; 6 mentees completed and received their Little Drop Certificate. (see figure. 6 for analysis)
-<h2 class="chart-title">Statistical Analysis</h2>
-<div id="chart_div" class="gender-count" style="width: 100%; height: 100%;"></div>
-<i>Figure 2: Count of Gender for 913 mentees for 2022</i>
-<div id="dual_x_div"></div>
+    <section>
+      <p>
+        In June, we onboarded 71 mentees for our 2nd cohort of Non-coding courses: 30 for Digital Marketing, 13 for
+        Employability Skills, 14 for Social Media Management and 14 for Project Management.
+        In July, we onboarded our 9th cohort for Coding courses with 131 registered mentees, and due to popular demand,
+        we opened the second batch registration for this cohort; 45 mentees registered leading up to 171: 18 for
+        Business intelligence, 54 for Data Analysis, 21 for Data Science, 20 for Mobile App Development and 57 for Web
+        Development.
+        In October 2022, the Management streamlined the Bootcamp courses to 5; 3 for the coding pathway and 2 for the
+        Non-coding pathway (see why-pg-3). The Bootcamp onboarded its 10th cohort mentees using this new development, a
+        total of 204 registered for the 5 courses from Batch A, and 21 from Batch B; 91 for Data Analysis with Business
+        Intelligence, 27 for Data Science, 18 for Employability Skills, 25 for Social Media management and 62 for Web
+        Development.
+        From January 2022 to October 2022, we have recorded 913 registered mentees, compared to 503 registered in 2021,
+        out of which 301 are females, and 612 are males<a href="#chart_div">(see figure 2 for analysis)</a>. With the
+        increase in female participation, we hope to see more going forward. So far, 673 mentees registered for Coding
+        courses, and 240 registered for Non-coding courses (see figure 3 for analysis).
+        Among the registered mentees for 2022, 267 were employed, 299 were unemployed, and 347 were students (see figure
+        4 for analysis).
+        With the changes and improvement in orientation and proper mentorship, we observed that more students
+        transitioned into tech careers, even from the undergraduate level. This will give them an edge over others yet
+        to tap into these great opportunities.
+        A total of 233 mentees have registered so far for the Web Development course, 117 for Data Analysis, 127 for
+        Data Science, 69 for Mobile App Development, 36 for Business Intelligence, 69 for Social Media Management, 54
+        for Employability Skills, 48 for Project Management, 72 for Digital Marketing and 88 for Data analysis with
+        Business Intelligence. (see fig. 5 for analysis).
+        Interestingly, the Association of University Union (ASUU) embarked on a long strike this year, and it aided our
+        mentees' learning progress. However, quite a number of them were unable to complete their courses and meet up
+        with the deadline due to busy schedules, internet facilities, PC, etc. Also, when the ASUU strike was suspended,
+        some of our mentees were unable to continue learning smoothly, and some stopped completely, as lectures and exam
+        time -tables were fixed. We also had mentees who had to report to their NYSC camp, preventing them from
+        completing their courses. Thus, we recorded a total of 161 mentees in the Bootcamp, with 746 mentees evicted; 6
+        mentees completed and received their Little Drop Certificate. (see figure. 6 for analysis)
+      <h2 class="chart-title">Statistical Analysis</h2>
+      <div id="chart_div" class="gender-count" style="width: 100%; height: 100%;"></div>
+      <i>Figure 2: Count of Gender for 913 mentees for 2022</i>
+      <div id="dual_x_div"></div>
 
 
 
 
 
-<h2>Why We Introduced Non-Coding Courses</h2>
-<p>Non-coding courses are great for introducing people to the basics of technology without having to code. They provide an opportunity for people to learn about different concepts and skills that can help them in their future studies and career paths. Non-coding courses also allow individuals to explore their interests and understand how technology works. 
-We onboarded three cohorts for Non-coding Courses: Digital Marketing, Employability Skills, Project Management, and Social Media Management with Employability skills and Social Media Management.
-</p>
+      <h2>Why We Introduced Non-Coding Courses</h2>
+      <p>Non-coding courses are great for introducing people to the basics of technology without having to code. They
+        provide an opportunity for people to learn about different concepts and skills that can help them in their
+        future studies and career paths. Non-coding courses also allow individuals to explore their interests and
+        understand how technology works.
+        We onboarded three cohorts for Non-coding Courses: Digital Marketing, Employability Skills, Project Management,
+        and Social Media Management with Employability skills and Social Media Management.
+      </p>
 
-<h2>Why We Reduced Our Courses</h2>
-<p>The management felt the need to streamline the Bootcamp courses with more focus on relevant and job market courses; so they reduced the total courses to 5: Data Analysis with Business Intelligence, Data Science, Employability Skills, Social Media Management and Web Development. The Bootcamp admission period was also streamlined to twice a year for proper monitoring of mentees' activities. Our admin team has been working effortlessly to ensure the Bootcamp webinar is held; we were also able to charge them with responsibilities based on their coding skills. Thus, they built a website for the Bootcamp. Do check it out https://ldbootcamp.com.ng/. 
-We were very proud of their achievement. Also, two members of our admin team got employed by an IT company. Afterwards, we brought in another set of interns to boost their personal growth and skills.
-"The ones who are crazy enough to think they can change the world are the ones who do." 	--SteveJobs
-</p>
-<h2>Where We Are Now</h2>
-<p>During the year, we got information from 5 of our Ex-mentees and 1 of our current mentees about their employment status. A total of 5 reached out to us from tech companies like Deloitte, Stack Junior, and Ingressive. We joyfully celebrated them on our social media pages, LinkedIn and Twitter. 
-So far, we have successfully conducted 5 webinars from January to December, with amazing topics such as Getting Your CV Right, Upskilling and Ace that Internship, amongst others. We also held a career clinic for our mentees in the Bootcamp; we invited experts in their fields to have a one-on-one career conversation with them. You can see all these activities on our blog- https://blog.ldbootcamp.com.ng
-</p>
+      <h2>Why We Reduced Our Courses</h2>
+      <p>The management felt the need to streamline the Bootcamp courses with more focus on relevant and job market
+        courses; so they reduced the total courses to 5: Data Analysis with Business Intelligence, Data Science,
+        Employability Skills, Social Media Management and Web Development. The Bootcamp admission period was also
+        streamlined to twice a year for proper monitoring of mentees' activities. Our admin team has been working
+        effortlessly to ensure the Bootcamp webinar is held; we were also able to charge them with responsibilities
+        based on their coding skills. Thus, they built a website for the Bootcamp. Do check it out
+        https://ldbootcamp.com.ng/.
+        We were very proud of their achievement. Also, two members of our admin team got employed by an IT company.
+        Afterwards, we brought in another set of interns to boost their personal growth and skills.
+        "The ones who are crazy enough to think they can change the world are the ones who do." --SteveJobs
+      </p>
+      <h2>Where We Are Now</h2>
+      <p>During the year, we got information from 5 of our Ex-mentees and 1 of our current mentees about their
+        employment status. A total of 5 reached out to us from tech companies like Deloitte, Stack Junior, and
+        Ingressive. We joyfully celebrated them on our social media pages, LinkedIn and Twitter.
+        So far, we have successfully conducted 5 webinars from January to December, with amazing topics such as Getting
+        Your CV Right, Upskilling and Ace that Internship, amongst others. We also held a career clinic for our mentees
+        in the Bootcamp; we invited experts in their fields to have a one-on-one career conversation with them. You can
+        see all these activities on our blog- https://blog.ldbootcamp.com.ng
+      </p>
 
 
 
@@ -118,21 +172,82 @@ So far, we have successfully conducted 5 webinars from January to December, with
 
 
 
-<h2>Our Plans Ahead of 2023</h2>
-<p>In December 2022, the Little Drop management team introduced a new course titled Salesforce, and the cohort  will be onboarded by January 2023;
-Sales Force refers to the customer relationship management (CRM) system that helps businesses of all sizes manage and automate the sales process. The Salesforce ecosystem is where a business's sales and marketing teams collaborate to monitor leads and drive sales.
-This course will change many narratives, as it is envisaged to be the next focus in Nigeria and the world. Thus, our reason for tapping into this opportunity is to help our applicants and make them more relevant in the job market.
-We hope to come up with programs that will boost our visibility, such as:
-<ul>
-  <li>Coding challenges</li>
-  <li>More insightful webinars</li>
-  <li>More engaging content</li>
-  <li>Building a community</li>
-</ul>
-  </p>
-</section>
-</main>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <h2>Our Plans Ahead of 2023</h2>
+      <p>In December 2022, the Little Drop management team introduced a new course titled Salesforce, and the cohort
+        will be onboarded by January 2023;
+        Sales Force refers to the customer relationship management (CRM) system that helps businesses of all sizes
+        manage and automate the sales process. The Salesforce ecosystem is where a business's sales and marketing teams
+        collaborate to monitor leads and drive sales.
+        This course will change many narratives, as it is envisaged to be the next focus in Nigeria and the world. Thus,
+        our reason for tapping into this opportunity is to help our applicants and make them more relevant in the job
+        market.
+        We hope to come up with programs that will boost our visibility, such as:
+      <ul>
+        <li>Coding challenges</li>
+        <li>More insightful webinars</li>
+        <li>More engaging content</li>
+        <li>Building a community</li>
+      </ul>
+      </p>
+    </section>
+  </main>
+   <!-------------------------------------Footer---------------------------------------------------------------------------->
+   <footer id="footer">
+    <div class="footer">
+      <a class="f-logo" href="./index.html"><img class="footer-logo" src="Images/ld-logo.svg" alt="ld-logo" /></a>
+      <div class="footer-text">
+        <h5>About Us</h5>
+        <p>We are a not-for-profit organization</p>
+        <a href="https://ldbootcamp.com.ng/">Learn more</a>
+      </div>
+      <div class="footer-text">
+        <h5>Contact Us</h5>
+        <a href="#">Email: littledropedu@gmail.com</a>
+        <br>
+        <a href="#">Phone: 09135962695</a>
+      </div>
+      <div class="footer-text">
+        <button class="donate" id="donate-btn" onclick="showDiv()">Donate</button>
+        <p>
+          To keep the bootcamp running for free, your kind support is highly needed. Please hit the donate tab for
+          details. Thank you as you donate genourously towards the growth of this project.
+        </p>
+      </div>
+      <div class="show-details" id="show-div">
+        <div class="donation-tab">
+          <div>
+            <img class="navbar-toggler-icon" id="close-donate" onclick="hideDiv()" src="Images/icon-closenav.svg"
+              alt="toogle-img" />
+            <h5>Dollar Donation</h5>
+            <p>Account Name: LITTLE DROP CHARITY ENDOWMENT INITIATIVE</p>
+            <p> Jaiz Bank(Dollar)</p>
+            <p>Account Number: 0004540755</p>
+            <p>Ref: Edu Project(please add this reference)</p>
+          </div>
+          <br>
+          <br>
+          <div>
+            <h5>Naira Account</h5>
+            <p>You can send your Naira donations to: Little Drop Education Project:
+            <p>Bank Name: Jaiz</p>
+            <p>Account Name: Little Drop Charity -Education Project</p>
+            <p>Account Number: 0004586951</p>
+            <p><strong>Thank You</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-media-icons">
+      <a href="#"><img src="Images/facebook.png" alt="facebook-icon"></a>
+      <a href="https://www.linkedin.com/in/little-drop-430106210"><img src="Images/linkedin.png" alt="in"></a>
+      <a href="https://twitter.com/DropEducation?s=08"><img src="Images/twitter.png" alt="twit"></a>
+      <a href="https://wa.me/2349135962695"><img src="Images/whatsapp.png" alt="what"></a>
+    </div>
+    <span class="copyright">&copy; Littledrop Education Bootcamp, 2022.</span>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
