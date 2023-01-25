@@ -95,7 +95,7 @@ function drawRegionsMap() {
   );
 
   chart.draw(data, options);
-}
+};
 
 //Piechart gender count
 // Load the Visualization API and the corechart package.
@@ -113,8 +113,8 @@ function drawChart() {
   data.addColumn("string", "Topping");
   data.addColumn("number", "Slices");
   data.addRows([
-    ["Female", 2],
-    ["Males", 4],
+    ["Female", 301],
+    ["Males", 612]
   ]);
 
   // Set chart options
@@ -122,81 +122,62 @@ function drawChart() {
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.PieChart(
-    document.getElementById("chart_div")
+    document.getElementById("chart_gender")
   );
   chart.draw(data, options);
-}
+};
 
+
+//Coding and non-coding count
 google.charts.load("current", { packages: ["bar"] });
 google.charts.setOnLoadCallback(drawStuff);
 
 function drawStuff() {
   var data = new google.visualization.arrayToDataTable([
-    ["Element", "Density", { role: "style" }],
-    ["Copper", 8.94, "#b87333"], // RGB value
-    ["Silver", 10.49, "silver"], // English color name
-    ["Gold", 19.3, "gold"],
-
-    ["Platinum", 21.45, "color: #e5e4e2"], // CSS-style declaration
+    ["Element", { role: "style" }],
+    ["Non-coding", 243, "#b87333"], // RGB value
+    ["Coding", 670, "silver"] // English color name
   ]);
-  // var data = new google.visualization.arrayToDataTable([
-  //   ['Galaxy', 'Distance', 'Brightness'],
-  //   ['Canis Major Dwarf', 8000, 23.3],
-  //   ['Sagittarius Dwarf', 24000, 4.5],
-  //   ['Ursa Major II Dwarf', 30000, 14.3],
-  //   ['Lg. Magellanic Cloud', 50000, 0.9],
-  //   ['Bootes I', 60000, 13.1]
-  // ]);
 
-  var options = {
-    width: 800,
-    chart: {
-      title: "Nearby galaxies",
-      subtitle: "distance on the left, brightness on the right",
-    },
-    //   bars: 'horizontal', // Required for Material Bar Charts.
-    //   series: {
-    //     0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
-    //     1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
-    //   },
-    //   axes: {
-    //     x: {
-    //       distance: {label: 'parsecs'}, // Bottom x-axis.
-    //       brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
-    //     }
-    //   }
-  };
+  var options = {}
+      
 
   var chart = new google.charts.Bar(document.getElementById("dual_x_div"));
   chart.draw(data, options);
 }
 
-anychart.onDocumentReady(function () {
-  //   // set the data
-  var data = [
-    { x: "Coding", value: 316 },
-    { x: "Non-coding", value: 198 },
-  ];
-  //,exploded: true
-  // create the chart
-  var chart = anychart.pie();
 
-  // set the chart title
-  chart.title("Count of Coding and Non-coding intake");
+//Piechart Employment status count
+// Load the Visualization API and the corechart package.
+google.charts.load("current", { packages: ["corechart"] });
 
-  //   // sort elements
-  chart.sort("desc");
-  //   // add the data
-  chart.data(data);
-  //   // set legend position
-  chart.legend().position("right");
-  //   // set items layout
-  chart.legend().itemsLayout("vertical");
+// Set a callback to run when the Google Visualization API is loaded.
+google.charts.setOnLoadCallback(drawChart);
 
-  //   // display the chart in the container
-  chart.container("total");
-  chart.draw();
-});
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart() {
+  // Create the data table.
+  var data = new google.visualization.DataTable();
+  data.addColumn("string", "Topping");
+  data.addColumn("number", "Slices");
+  data.addRows([
+    ["Student", 347],
+    ["Employed", 267],
+    ["Unemployed", 299]
+  ]);
+
+  // Set chart options
+  var options = {};
+
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.PieChart(
+    document.getElementById("chart_status")
+  );
+  chart.draw(data, options);
+}
+
 
 /*anychart.onDocumentReady(function() {
 
